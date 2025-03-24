@@ -1,2 +1,0 @@
-CREATE (:School {name: "Polytech", city: "Montpellier"})<-[:STUDIES_IN]-(n0:Person {name: "Dziyana", age: 25})-[:LIKES]->(:Book {name: "Harry Potter", year: 1997})<-[:WROTE]-(:Person {name: "J. K. Rowling"}),
-(:Cat {name: "Saphira"})<-[:LOVES]-(n0)-[:LIKES]->(:Game {name: "Genshin Impact"})
