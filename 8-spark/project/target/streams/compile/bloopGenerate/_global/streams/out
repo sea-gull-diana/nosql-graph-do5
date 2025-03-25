@@ -1,0 +1,4 @@
+[debug] [root-8-spark-build] Classpath dependencies List()
+[debug] [root-8-spark-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'root-8-spark-build' to '/home/dziyana/Documents/Graphs/nosql-graph-do5/8-spark/project/.bloop/root-8-spark-build.json'
+[success] Generated .bloop/root-8-spark-build.json
