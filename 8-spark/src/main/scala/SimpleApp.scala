@@ -3,7 +3,7 @@ import org.apache.spark.sql.SparkSession
 
 object SimpleApp {
   def main(args: Array[String]): Unit = {
-    val logFile = "/home/dziyana/Documents/Graphs/nosql-graph-do5/8-spark/logs/sparklog.md" // Should be some file on your system
+    val logFile = "s3a://spark/sparklog.md" // Should be some file on your system
     val spark = SparkSession.builder.appName("Simple Application").master("local[*]").getOrCreate()
     val logData = spark.read.textFile(logFile).cache()
     val numAs = logData.filter(line => line.contains("a")).count()

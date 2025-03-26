@@ -1,4 +1,4 @@
-name := "Simple Project"
+name := "Scala project"
 
 version := "1.0"
 
