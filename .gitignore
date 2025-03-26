@@ -1,2 +1,7 @@
 .env
 .metals
+.vscode
+.bloop
+**/project
+**/target
+.scala-build

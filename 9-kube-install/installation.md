@@ -55,6 +55,15 @@ Import image to my local cluster to avoid pushing it to a remote registry:
 k3d image import my-spark-with-s3a:s3 -c nosql
 ```
 
+Set minio credentials for spark apps (there are 3 yaml manifests in the *sparkapps* folder), change these lines:
+
+```
+    "spark.hadoop.fs.s3a.access.key": "<your access key>"
+    "spark.hadoop.fs.s3a.secret.key": "<your secret key>"
+```
+
+To get the access key and secret key, go to *Administrator -> Identity -> Users* on MinIO UI and click on your user. Add a "readwrite" policy to the user and create an access key in *Service Accounts* tab.
+
 Execute the apps (there are 3 yaml manifests in the *sparkapps* folder):
 
 ```
