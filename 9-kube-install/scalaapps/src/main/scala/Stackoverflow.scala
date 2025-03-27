@@ -7,7 +7,7 @@ import org.apache.spark.sql.types._
 object Stackoverflow {
   def main(args: Array[String]): Unit = {
     
-        val csvDataFile = "data/stackoverflow.csv"
+        val csvDataFile = "s3a://spark/stackoverflow.csv"
 
         val spark = SparkSession.builder
           .appName("Stackoverflow Application")

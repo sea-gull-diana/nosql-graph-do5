@@ -28,7 +28,7 @@ Default login is "minio" and default password is "minio123" (can be changed in t
 
 Create a bucket (named "spark") and upload the jar file for spark application to the bucket. As well as the csv files.
 
-To build a jar file, go to *8-spark* directory and execute `sbt package`. The jar file can be found in *target/scala-2.12* folder afterwards. You can also find a ready-made jar file in the *9-kube-install/jars* folder.
+To build a jar file, go to *scalaapps* directory and execute `sbt package`. The jar file can be found in *target/scala-2.12* folder afterwards. You can also find a ready-made jar file in the *9-kube-install/jars* folder.
 
 ### Installing Spark Operator
 

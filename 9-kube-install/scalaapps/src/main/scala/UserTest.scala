@@ -15,7 +15,7 @@ object UserTest {
     val usersDF = spark.read
       .option("header", "true") 
       .option("inferSchema", "true") 
-      .csv("data/users.csv")
+      .csv("s3a://spark/users.csv")
 
     val result = usersDF
       .filter($"age" >= 25)
